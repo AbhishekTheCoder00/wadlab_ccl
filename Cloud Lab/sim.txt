@@ -1,0 +1,14 @@
+Open Eclipse
+
+Create Project
+
+In Src, create package
+
+in package ,copy sjf 5 files and rename package name 
+
+Add jars -> cloudsim 4.0
+right click ,build path ,configure build path -. Add exterbal jar files  apply 
+
+ruas sjf sv=chedular
+
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1RsQWx3S3VxNWtaTmo3dnk0d0daNjgyMm90Z3xBQ3Jtc0tscEFncXZ5Yjhhc2JLQk9NMml5aWh3cXNabXVfVFFHcXQzQ09Jd3JvaXV0MWtJLXBUSFJzY1dKNmVVSG45X2VpeE5hQk5nRUJkYmQyamV1UlNYdDJyamxTd0R0TGJWT3pMWDNmY0xUalJfeTFTVnlaaw&q=https%3A%2F%2Fgithub.com%2FCloudslab%2Fcloudsim%2Freleases%2Ftag%2Fcloudsim-3.0.3&v=OZRbkkEuQMI

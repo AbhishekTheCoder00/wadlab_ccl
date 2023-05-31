@@ -1,0 +1,67 @@
+SET-A
+1.	Create a responsive web page -  registration page 
+2.	Design web Application for student portfolio and host the web application using GAE
+
+
+
+                                                         SET-B
+
+1.	Create a responsive web page -  Login page 
+
+2.	Simulate a cloud scenario using CloudSim.
+
+
+SET-C
+1.	Create a web page -  registration page using Angular FormsModule
+2.	Find a procedure to transfer the files from one virtual machine to another virtual machine
+
+SET-D
+
+1.	Create a web page -  Login page using Angular FormsModule
+2.	Find a procedure to transfer the files from one virtual machine to another virtual machine.
+
+
+SET-E
+
+1.	Create HTTP server using Node JS
+2.	Design  custom Application using Salesforce Cloud.
+
+SET-F
+
+1.	Create authentication server using Node JS
+2.	Design an Assignment to retrieve, verify, and store user credentials using FirebaseAuthentication, the Google App Engine standard environment.
+
+
+
+
+
+SET-G
+
+1.	Create static website Node JS application.
+2.	Create a web application for loginpage and host the web application using GAE
+
+
+SET-H
+
+1.	Create a program of react JS using React hooks (any one)	
+2.	Design  any application using Salesforce Cloud
+
+SET-I
+
+1.	Simple program to display Hello message on browser using React JS.
+2.	Design a web application in a PaaS environment.
+
+SET-J
+
+1.	Program to show Updating DOM using jQuery. (any method can be used)
+2.	Design an Assignment to retrieve, verify, and store user credentials using Firebase Authentication, the Google App Engine standard environment
+
+SET-K
+
+1.	CRUD operation 
+2.	Design  a web application in a PaaS environment.
+
+SET-L
+
+1.	Design Simple web page using jQuerymobile.
+2.	Find a procedure to transfer the files from one virtual machine to another virtual machine

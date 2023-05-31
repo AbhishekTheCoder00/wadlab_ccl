@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Kp's Document</title>
+    <style>
+      
+      #navbar ul li a{
+        text-decoration: none;
+        font-size: 15px;
+       }
+      #prod{
+       font-family: sans-serif;
+       margin-top: 50px;
+       font-size: 20px;
+      }
+      #head{
+        font-family: sans-serif;
+        font-size: 20px;  
+      }
+      
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="Page">
+      <div data-role="header" data-theme="a" >
+        <h1 id="head">KP's Cafe</h1>
+      </div>
+      <div id="navbar" data-role="navbar" data-grid="c">
+        <ul>
+          <li><a href="main.html" class="ui-btn-active">Home</a></li>
+          <li><a href="servics.html" class="ui-btn-active" >Services</a></li>
+          <li><a href="contact.html" class="ui-btn-active" >Contact us</a></li>
+          <li><a href="account.html"class="ui-btn-active" >My Account</a></li>
+        </ul>
+      </div>
+
+      <center><h3 id="prod">Our Products</h3></center>
+
+      <div class="content">
+        <center>
+          <div class="rows">
+            <div>
+              <img src="/coffe.avif" height="260px" width="260px" alt="" />
+              <img src="/cake.avif" height="260px" width="260px" alt="" />
+              <img src="/icecream.avif" height="260px" width="260px" alt="" />
+              </div>
+          </div>
+
+           <div class="rows">
+            <div>
+              <img src="/tea.avif" height="260px" width="260px" alt="" />
+              <img src="/colddoffe.avif" height="260px" width="260px" alt="" />
+              <img src="/chocolate.avif" height="260px" width="260px" alt="" />
+             </div>
+          </div>
+  
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

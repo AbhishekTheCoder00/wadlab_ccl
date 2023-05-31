@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kp's Document</title>
+    <style>
+      #navbar {
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="Page">
+      <div data-role="header" data-theme="b">
+        <h1>KP's Cafe</h1>
+      </div>
+      <div id="navbar" data-role="navbar" data-grid="c">
+        <ul>
+          <li><a href="main.html" >Home</a></li>
+          <li><a href="servics.html" >Services</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="account.html" class="ui-btn-active">My Account</a></li>
+        </ul>
+      </div>
+      <center>
+      <h1 id="reg">Registration Form </h1>
+      <div
+        id="registrationForm"
+        style="display: flex; flex-direction: column; width: 28%"
+      >
+        <div class="dataContainer"  >
+          <label>Name :</label>
+          <input id="name" name="name" type="text" />
+        </div>
+      
+        <div class="dataContainer">
+          <label>Email :</label>
+          <input id="email" name="email" type="email" />
+        </div>
+        <div class="dataContainer">
+          <label>Password:</label>
+          <input id="password" name="password" type="password" />
+        </div>
+        <div class="dataContainer">
+          <label>Phone no. :</label>
+          <input id="phone" name="phone" type="number" />
+        </div>
+           <div class="dataContainer" >
+            <label>Age :</label>
+            <input id="age" name="age" type="number" />
+          </div>
+          <div class="dataContainer" >
+            <label>Date of Birth :</label>
+            <input id="dob" name="dob" type="date" />
+          </div>
+    
+        <div class="dataContainer" >
+          <label>Address :</label>
+          <input id="address" name="address" type="text" />
+        </div>
+      
+        <button id="btn" > Submit </button>
+      </div>
+
+      <a href="account.html" >Already Registered ? Login</a>
+    </center>
+  </body>
+
+</html>

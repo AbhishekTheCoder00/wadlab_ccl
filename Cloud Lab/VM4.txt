@@ -1,0 +1,22 @@
+ 
+file -> preferences -> create nat network
+
+vm-> settings -> network -> attached to nat Network , name of nat network   // Same for second vm 
+
+Boot vm 1
+
+pass ,username :  vagrant
+
+if config 
+
+boot VM 2
+
+sudo apt install net-tools
+
+
+touch file.txt 
+nano file.txt                                
+
+scp file.txt  vagrant@ifconfigVm2:/home/vagrant
+pwd check   VM2
+Ask Password

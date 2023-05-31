@@ -1,0 +1,33 @@
+
+
+======================== Notes ============================
+#Angular 
+Angular Run Steps :
+
+npm install -g @angular/cli   //install angular cli for terminal 
+ng new <app-name>      // Create new app in folder
+ng serve              // To run program 
+http://localhost:4200/
+
+===========================================================
+#Node js 
+node -v 
+npm -v 
+
+npm init -y     //initialize npm manager  
+node <filename.js>  //To run node js 
+
+// for installing package npm install <package_name>
+
+===========================================================
+#React 
+
+npm install -g create-react-app //create react app globally 
+
+npx create-react-app kp-react  //Create react app
+npm uninstall -g create-react-app  //If React error occurs
+
+cd kp-react  //move to
+npm start 
+http://localhost:3000/ 
+

@@ -1,0 +1,23 @@
+npm install -g @angular/cli
+ng new my-app
+cd my-app
+ng serve
+
+
+http://localhost:4200
+
+src/app/app.component.ts
+
+"
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <h1>Welcome to my Angular App!</h1>
+    <p>Enjoy building amazing applications with Angular.</p>
+  `,
+})
+export class AppComponent {}
+
+"

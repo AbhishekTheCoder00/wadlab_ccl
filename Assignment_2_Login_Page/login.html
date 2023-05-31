@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page in HTML</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            // Retrieve input values
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Perform authentication
+            if (username && password) {
+                // Store user credentials in local storage
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', password);
+
+                // Redirect to home page or perform further actions
+                window.location.href = 'home.html';
+            } else {
+                alert('Please enter a username and password.');
+            }
+        }
+    </script>
+</body>
+
+</html>

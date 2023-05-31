@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add your additional CSS styling here */
+  </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" id="first-name" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" id="last-name" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" id="password" class="input">
+       </div>  
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" id="confirm-password" class="input">
+       </div> 
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select id="gender">
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" id="email" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" id="phone" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea id="address" class="textarea"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Postal Code</label>
+          <input type="text" id="postal-code" class="input">
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" id="terms">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn" id="register-btn">
+      </div>
+    </div>
+</div> 
+<script>
+  // Add your JavaScript code here
+
+  // Retrieve form elements
+  const firstNameInput = document.getElementById('first-name');
+  const lastNameInput = document.getElementById('last-name');
+  const passwordInput = document.getElementById('password');
+  const confirmPasswordInput = document.getElementById('confirm-password');
+  const genderSelect = document.getElementById('gender');
+  const emailInput = document.getElementById('email');
+  const phoneInput = document.getElementById('phone');
+  const addressTextarea = document.getElementById('address');
+  const postalCodeInput = document.getElementById('postal-code');
+  const termsCheckbox = document.getElementById('terms');
+  const registerBtn = document.getElementById('register-btn');
+
+  // Handle form submission
+  registerBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Retrieve form values
+    const firstName = firstNameInput.value;
+    const lastName = lastNameInput.value;
+    const password = passwordInput.value;
+    const confirmPassword = confirmPasswordInput.value;
+    const gender = genderSelect.value;
+    const email = emailInput.value;
+    const phone = phoneInput.value;
+    const address = addressTextarea.value;
+    const postalCode = postalCodeInput.value;
+    const agreedToTerms = termsCheckbox.checked;
+
+    // Perform validation
+    if (!firstName || !lastName || !password || !confirmPassword || !gender || !email || !phone || !address || !postalCode) {
+      alert('Please fill in all the fields.');
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      alert('Passwords do not match.');
+      return;
+    }
+
+    if (!agreedToTerms) {
+      alert('Please agree to the terms and conditions.');
+      return;
+    }
+
+    // Store form data in local storage
+    const formData = {
+      firstName,
+      lastName,
+      password,
+      gender,
+      email,
+      phone,
+      address,
+      postalCode
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+
+    // Redirect to login page
+    window.location.href = 'home.html';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+/* Additional CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.inputfield {
+  position: relative;
+}
+
+.inputfield label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputfield input,
+.inputfield select,
+.inputfield textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.inputfield .custom_select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 37px;
+}
+
+.inputfield .custom_select select {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.inputfield .custom_select::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.inputfield.terms {
+  display: flex;
+  align-items: center;
+}
+
+.inputfield.terms label.check {
+  margin-right: 10px;
+}
+
+.inputfield.terms p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.inputfield .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.inputfield .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.inputfield input[type="checkbox"]:checked ~ .checkmark::after {
+  display: block;
+}
+
+.inputfield .checkmark::after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.inputfield input[type="submit"].btn {
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
